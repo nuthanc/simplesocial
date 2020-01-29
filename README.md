@@ -9,3 +9,9 @@
 * In settings.py file, 
     * Add the TEMPLATE_DIR
     * Register accounts under # simplesocial
+    * TEMPLATE_DIR under TEMPLATES
+    * Add STATICFILES_DIR at the end
+* python manage.py migrate
+* python manage.py makemigrations accounts
+* python manage.py migrate
+* python manage.py runserver to check 
