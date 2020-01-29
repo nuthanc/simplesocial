@@ -15,3 +15,7 @@
 * python manage.py makemigrations accounts
 * python manage.py migrate
 * python manage.py runserver to check 
+
+### Templates
+* Under templates, create base.html and index.html
+* views.py under simplesocial project for index.html
