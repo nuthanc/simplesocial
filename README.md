@@ -19,3 +19,4 @@
 ### Templates
 * Under templates, create base.html and index.html
 * views.py under simplesocial project for index.html
+* In urls.py, import views and include in the path
