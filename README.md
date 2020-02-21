@@ -55,3 +55,32 @@
 
 ### base.html of main template
 * Link bootstrap 3
+* myNav,mycontent for custom CSS
+
+### Login and Logout Redirect url in settings.pyt
+* Bottom of settings.py, login and logout redirect url
+* Create test and thanks templates in the main templates folder
+* Need to set them up in views.py and urls.py file
+
+### Groups and Post Applications
+* django-admin startapp posts
+* django-admin startapp groups
+* Create templates/posts/post_base.html directly under posts
+* We will also create post_detail, post_confirm_delete, post_form, post_list, user_post_list.html and _post.html
+* _post.html will be used to inject this in other posts.html files
+* Create urls.py and forms.py in posts
+* Similarly create templates/groups directly under groups
+* Then in templates create group_base.html, group_detail.html, group_form.html and group_list.html
+* Create urls.py 
+
+#### Groups models.py
+* import slugify
+    * Convert spaces to hyphens. Remove characters that aren't alphanumerics, underscores, or hyphens. Convert to lowercase. Also strip leading and trailing whitespace.
+* pip install misaka
+    * Allows md in posts
+* get_user_model returns the User model that is active in this project
+* import template from django and get template.Library() in register
+* group attribute of GroupMember is a foreign key to Groups and its related name will be memberships
+* String representation of model will be called when a model is used in a template
+* GroupMember connects Group and Users
+
