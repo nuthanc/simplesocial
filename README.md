@@ -80,7 +80,13 @@
     * Allows md in posts
 * get_user_model returns the User model that is active in this project
 * import template from django and get template.Library() in register
+    * Use custom template tags in the future
 * group attribute of GroupMember is a foreign key to Groups and its related name will be memberships
 * String representation of model will be called when a model is used in a template
 * GroupMember connects Group and Users
 
+#### Posts models.py
+* User from get_user_model()
+* auto_new=True sets the DateTimeField automatically when someone posts
+* Meta class ordering is descending(that's what the - indicates)
+* unique_together so that every message is uniquely linked to the User
