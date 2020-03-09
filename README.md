@@ -90,3 +90,5 @@
 * auto_new=True sets the DateTimeField automatically when someone posts
 * Meta class ordering is descending(that's what the - indicates)
 * unique_together so that every message is uniquely linked to the User
+
+#### Connecting models to views
