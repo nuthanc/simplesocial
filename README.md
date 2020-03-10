@@ -91,4 +91,13 @@
 * Meta class ordering is descending(that's what the - indicates)
 * unique_together so that every message is uniquely linked to the User
 
-#### Connecting models to views
+#### Connecting Groups models to views
+* Import Mixins required for Login and Permission
+* Import reverse and generic
+* 3 Views namely CreateView, DetailView and ListView
+* In group_base.html, 3 blocks
+* Next group_detail.html, where group is a context dictionary that comes from CBV
+    * count attribute for members of group model
+    * Leave or Join button, where content class is custom class
+    * include is just like extends but we are doing it in the middle of the file
+    * _post.html means this html file is gonna be injected somewhere
