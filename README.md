@@ -101,3 +101,6 @@
     * Leave or Join button, where content class is custom class
     * include is just like extends but we are doing it in the middle of the file
     * _post.html means this html file is gonna be injected somewhere
+* Create urls.py for groups
+* Register models in admin.py of groups
+    * TablularInLine allows to edit models on the same page as the Parent model
