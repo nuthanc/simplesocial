@@ -104,3 +104,33 @@
 * Create urls.py for groups
 * Register models in admin.py of groups
     * TablularInLine allows to edit models on the same page as the Parent model
+
+#### Posts views.py
+* pip install django-braces
+* select_related for posts with user and group
+* Then in urls.py of posts add the paths
+* Next is templates for Posts pages
+* get_user_groups in post_list.html comes from the Groups GroupMember models template library which we imported from django(related_name user_groups from GroupMember)
+* Have no idea on where get_other_groups is coming from, maybe it is the complement of get_user_groups
+* Filling _post.html file, we don't have to extend since we are injecting in the middle
+* aria-hidden: Ignore the element and not read it out loud
+    * aria for screenreaders used by people having disablities
+* Next fill post_confirm_delete,user_post_list and post_detail
+
+#### Groups views.py
+* Add JoinGroup and LeaveGroup in views.py of groups
+* Redirect from View by inheriting RedirectView
+* Get model using method like get_object_or_404
+* Connect the above 2 CBV to urls.py
+
+#### Migrations and Debugging
+* Add groups and posts app in settings.py file's INSTALLED_APPS
+* python manage.py migrate
+* python manage.py makemigrations groups
+* python manage.py makemigrations posts
+* python manage.py migrate
+* python manage.py runserver
+* Ran into some error while logging in, need to check
+* That is because simplesocial's settings.py and urls.py were not updated
+* Next error in HomePage views.py of simplesocial
+* Resolved after making is_authenticated() to is_authenticated
