@@ -131,6 +131,8 @@
 * python manage.py migrate
 * python manage.py runserver
 * Ran into some error while logging in, need to check
-* That is because simplesocial's settings.py and urls.py were not updated
+    * That is because simplesocial's settings.py and urls.py were not updated
 * Next error in HomePage views.py of simplesocial
-* Resolved after making is_authenticated() to is_authenticated
+    * Resolved after making is_authenticated() to is_authenticated
+* Another problem of Groups not being listed
+    * This problem was due to incorrect code in group_list.html

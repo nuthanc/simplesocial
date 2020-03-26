@@ -21,7 +21,7 @@ class SingleGroup(generic.DetailView):
     model = Group
 
 
-class ListGroups(generic.ListView):
+class ListGroups(generic.list.ListView):
     model = Group
 
 
