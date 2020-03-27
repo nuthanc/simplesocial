@@ -136,3 +136,4 @@
     * Resolved after making is_authenticated() to is_authenticated
 * Another problem of Groups not being listed
     * This problem was due to incorrect code in group_list.html
+* Finally correct the DIR to DIRS in settings.py
