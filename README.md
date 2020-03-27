@@ -137,3 +137,12 @@
 * Another problem of Groups not being listed
     * This problem was due to incorrect code in group_list.html
 * Finally correct the DIR to DIRS in settings.py
+
+### Django Toolbar
+* pip install django-debug-toolbar
+* Django docs for django-debug-toolbar
+* In settings.py
+    * After staticfiles in INSTALLED_APPS, add 'debug_toolbar' before our custom apps
+    * Add 'debug_toolbar.middleware.DebugToolbarMiddleware' to MIDDLEWARE
+    * Add INTERNAL_IPS to point to localhost
+* In project level urls.py file, concatenate url_patterns with debug url
